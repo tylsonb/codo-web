@@ -1,0 +1,56 @@
+.menu-flotante {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+}
+
+.menu-flotante .opcion {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-flotante .opcion i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.menu-flotante .opcion .opcion-nombre {
+    display: none;  
+}
+
+.menu-flotante:hover .opcion .opcion-nombre {
+    display: block;
+       
+}
+
+.menu-flotante .opcion-nombre::after {
+    content: attr(data-nombre);
+    }
+
+#opcion-cotiza {
+    background-color: rgba(234, 52, 46, 1);
+}
+
+#opcion-repuesto {
+    background-color: #333;
+}
+
+#opcion-agendamiento {
+    background-color: #5f5f5f;
+}
+
+#opcion-whatsapp {
+    background-color: #8de981;
+}
+

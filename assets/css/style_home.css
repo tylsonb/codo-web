@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.oculto-seo {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.header {
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.headerin {
+        background-color: #fff;
+        float: left;
+    }
+
+.menu {
+    display: flex;
+    background-color:  #fff;
+    align-items: center;
+    justify-content:space-between;         
+}
+
+
+
+/* haburguesa */
+
+.hamburguesa {
+    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* cambia el icono de la haburguesa */
+
+.hamburguesa .barra {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+    transition: transform 0s ease;
+}
+
+.hamburguesa.menu-active .barra1 {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburguesa.menu-active .barra2 {
+    transform: scaleX(0);
+}
+
+.hamburguesa.menu-active .barra3 {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* fin hamburgesa */
+
+
+.seleccionado::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 100%;
+    background: #18bde6;
+    transition: width .5s ease, .5s ease;
+}
+
+#menu-inicio a {
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: #18bde6;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.menu li span {
+    color: black; 
+    text-decoration: none; 
+    position: relative; 
+}
+
+.menu li span:hover {
+    color:#18bde6; 
+    text-decoration: none; 
+    position: relative; 
+}
+
+.seleccionado_item::before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #18bde6;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.seleccionado_item:hover::before {
+    opacity: 0.9; 
+}
+
+
+span {
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 14px;}
+
+.menu ul {
+        display: flex;
+        padding: 24px 10px 0px;
+    
+    }
+
+nav li {
+    color: #000;
+    list-style: none;
+    padding: 1em;           
+}
+
+
+.submenu {   
+    display:none;
+    opacity: 1;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 19px !important;
+    height: initial !important;
+    border-top: 3px solid #000;  
+}
+
+.submenu-lista{
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.submenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu ul li {
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.1s ease-in-out;
+    
+}
+.submenu-lista ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu_item:hover .submenu {
+    display: block;
+}
+
+
+/* Carrusel */
+
+.fotorama__img {
+    width: 100%;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease;
+    z-index: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 1s ease;
+}
+
+.carousel-inner img.active {
+    opacity: 1; /* se muestra solo la imagen activa */
+}
+.carousel-nav {
+    text-align: center;
+    
+}
+
+.carousel-nav button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.carousel-nav button.active {
+    background-color: #000;
+}
+
+.wrapper {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.contenido{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.contenido h2 {
+    color: #18bde6;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+strong {
+    font-weight: 900;
+
+}
+
+p{ 
+    margin: 0 0 10px;
+}
+
+.contenido .subtitle{
+    color: #002239;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.contenido .main-content {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 40px;
+    margin: 0 0 10px;
+    color: #666;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.section-marcas h2{
+    color: #18bde6;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.cotenedor-marcas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+
+.card img{
+    width: 240px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 11px 11px 7px 7px;
+    text-align: center;   
+}
+
+.cotenedor-marcas:hover img:not(:hover) {
+    opacity: .7;
+    transform: scale(.85);
+}
+
+.section-experiencia img {
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-bottom: 70px;
+    border-radius: calc(0.25rem - -10px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+    color: #002239;
+    background-color: #f5f5f5;
+}
+
+.footer-inner {
+    max-width: 1070px;
+    margin: 0 auto;    
+}
+
+.footer-direction, .footer-contact {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 30px;  
+    
+    
+}
+
+.footer-rrss {
+    display: table-cell;
+    text-align: right;
+    padding: 30px 0px 30px 375px;
+}
+
+.footer i {
+    color: #002239;
+    text-decoration: none;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.footer a {
+    color: #002239;
+    text-decoration: none;
+    
+}
+
+.copyright {
+    border-top: 1px solid #999;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.copyright a{
+    text-decoration:underline; 
+    color:#18bde6;
+
+}
+
+@media screen and (max-width: 768px) {
+        
+.menu-list {
+        display: none; 
+        flex-direction: column; 
+        background-color: #FFF; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        width: 50%; 
+        padding: 10em; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);     
+    }
+
+
+    .menu-list li {
+        padding: 1.5em 0; /* Espaciado interior */
+    }
+
+    .menu_item{
+        border-top: 1px solid #ccc ;
+    }
+
+    .seleccionado {
+        position: relative;
+    }
+
+    .seleccionado::after {
+        content: '';
+        display: block;
+        margin: 0;
+        /* margin-top: 20px; */
+        height: 4px;
+        width: 18%;
+        background: #18bde6;
+        transition: width .5s ease, .5s ease;
+    }
+
+    .menu-list.active {
+        display: none; /* Muestra el menú cuando está activo */
+    }
+
+    .hamburguesa {
+        display: flex; /* Muestra el botón de hamburguesa en pantallas más pequeñas */
+    }
+    
+}
+
+@media (max-width: 970px) {
+
+    .header {
+        width: 90%;
+        background-color: transparent;
+        min-width: 299px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu_item:hover .submenu {
+      display: none;
+    }
+  
+    .menu_item.active .submenu {
+      display: block;
+    }
+  
+    .menu_item.active .submenu ul li {
+      display: block;
+    }
+  }
+
+  
+
+@media (max-width: 768px) {
+    .submenu {
+        display: none;
+        opacity: 1;
+        position: relative; /* Cambiado a relativo */
+        background-color: #fff;
+        margin-top: 0;
+        border-top: 3px solid #000;
+    }
+
+    .submenu.show {
+        display: block;
+    }
+
+    .submenu-lista {
+        display: none; /* Ocultamos la lista por defecto */
+    }
+
+    .submenu.show .submenu-lista {
+        display: block; /* Mostramos la lista cuando se hace clic en el elemento del menú */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+

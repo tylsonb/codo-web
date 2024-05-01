@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Venta de Autos Nuevos y Usuados" >
+    <link rel="icon" type="image/png" href="./assets/img/favicon-32x32.png">
+    <title>Inicio | Autoplanet Retail</title>
+    <script src="https://kit.fontawesome.com/f7d49264a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/normalize.css" >
+    <link rel="stylesheet" href="./assets/css/style_home.css" >
+    <link rel="stylesheet" href="./assets/css/styles_menu_flotante.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <div>
+          <img class="hederin" src="./assets/img/logo-autoplanet2.jpg" alt="logo-autoplanet2" >
+        </div>
+        <div class="menu-responsive">
+          <div class="hamburguesa" onclick="toggleMenu()">
+            <div class="barra barra1"></div>
+            <div class="barra barra2"></div>
+            <div class="barra barra3"></div>
+          </div>
+        </div>
+        <div>
+          <ul class="menu-list lista">
+            <li id="menu-inicio" class="seleccionado">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu_item">
+              <span class="seleccionado_item">Nuevos</span>
+              <div class="submenu">
+                <div class="submenu-lista">
+                <ul>
+                  <li class="sub_menu-item"><a href="#">DFSK</a></li>
+                  <li class="sub_menu-item"><a href="#">Geely</a></li>
+                  <li class="sub_menu-item"><a href="#">Subaru</a></li>
+                </ul>
+              </div>
+              </div>
+            </li>
+            <li class="menu_item">
+              <span class="seleccionado_item">Post Venta</span>
+              <div class="submenu">
+                <div class="submenu-lista">
+                <ul>
+                  <li class="sub_menu-item"><a href="#">Repuestos</a></li>
+                  <li class="sub_menu-item"><a href="#">DFSK Agendamiento</a></li>
+                  <li class="sub_menu-item"><a href="#">Subaru Agendamiento</a></li>
+                  <li class="sub_menu-item"><a href="#">Sistemas de Protecion</a></li>
+                </ul>
+              </div>
+              </div>
+            </li>
+            <li class="menu_item">
+              <span class="seleccionado_item">Sucursales</span>
+            </li>
+            <li class="menu_item">
+              <span class="seleccionado_item">Contacto</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="carousel">
+      <h1 class="oculto-seo">Autoplanet</h1>
+      <div class="carousel-inner">
+        <img src="./assets/img/1-ir-somos-abril.jpg" class="fotorama__img active" alt="foto otoño">
+        <img src="./assets/img/2-ir-dfsk-suv-abril.jpg" class="fotorama__img" alt="foto dfsk">
+        <img src="./assets/img/3-ir-dfsk-utilitarios-abril.jpg" class="fotorama__img" alt="foto utilitarios">
+        <img src="./assets/img/4-geely-abril.jpg" class="fotorama__img" alt="">
+        <img src="./assets/img/5-subaru-abril.jpg" class="fotorama__img" alt="foto subaru">
+        <img src="./assets/img/6-repuestos-abril.jpg" class="fotorama__img" alt="foto repuestos">
+      </div>
+      <div class="carousel-nav"></div>
+    </section>
+
+    <!-- menu flotante -->
+      
+    <div id="menu-flotante" class="menu-flotante">
+      <div class="opcion" id="opcion-cotiza">
+          <i class="fa fa-car fa-fw"></i>
+          <span class="opcion-nombre">Cotiza</span>
+      </div>
+      <div class="opcion" id="opcion-repuesto">
+          <i class="fa fa-cog"></i>
+          <span class="opcion-nombre">Post Venta</span>
+      </div>
+      <div class="opcion" id="opcion-agendamiento">
+          <i class="fa fa-calendar"></i>
+          <span class="opcion-nombre">Agendamiento</span>
+      </div>
+      <div class="opcion" id="opcion-whatsapp" >
+          <i class="fa fa-whatsapp fa-fw"></i>
+          <span class="opcion-nombre">WhatsApp</span>
+      </div>
+  </div>
+    
+    <!-- fin de menu flotante -->
+
+    <section class="wrapper">
+      <div class="contenido">
+        <h2>¡Compra tu vehículo con nosotros!</h2>
+        <br>
+        <p class="subtitle">
+          ¿Por qué debes comprar tu auto en Autoplanet?
+        
+        <p class="main-content">
+          Al comprar con nosotros cuentas con el respaldo de una empresa inglesa
+          global líder en la distribución y comercialización de vehículos
+          premium y de lujo. Además, contamos con la más amplia gama de
+          vehículos para satisfacer tus necesidades: DFSK, GEELY, SUBARU,
+          SEMINUEVOS, FLOTAS, GARDX Y POSTVENTA. Lo que necesitas, en Autoplanet
+          lo encuentras. Calidad y servicio a tu disposición. Conoce
+          nuestros servicios online y/o visita nuestras sucursales .
+        </p>
+        
+      </div>
+    </section>
+
+    <!-- marcas -->
+    <section class="wrapper">
+      <div class="section-marcas">
+        <h2>Nuestra Marcas</h2>
+      </div>
+      <div class="cotenedor-marcas">
+        <div class="card">
+          <img src="./assets/img/marcas/IR-tarjeta-subaru.jpg" alt="">
+        </div>
+        <div class="card">
+          <img src="./assets/img/marcas/IR-tarjeta-gardx.jpg" alt="">
+        </div>
+        <div class="card">
+          <img src="./assets/img/marcas/IR-tarjeta-geely.jpg" alt="">
+        </div>
+        <div class="card">
+          <img src="./assets/img/marcas/IR-tarjeta-dfsk.jpg" alt="">
+        </div>
+      </div>
+      <div class="section-experiencia">
+        <a href="#" target="_blank"><img src="./assets/img/marcas/IR-Experiencia-digital.jpg" alt=""></a>
+        
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-direction">
+          <span>
+            <strong>CASA MATRIZ</strong>
+          </span>
+          <br>
+          <a href="#" target="_blank">Balbastro 650, B1611 Don Torcuato<br>
+            Provincia de Buenos Aires, Argentina</a>
+        </div>
+        <div class="footer-contact">
+          <span><strong>CONTACTO</strong></span><br>
+          <a href="#">600 601 0000</a><br>
+          <a href="mailto:contactcenter@autoplanet.com">contactcenter@autoplanet.com</a>
+      </div>
+      <div class="footer-rrss">				 
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a>   
+      </div>
+      <div class="copyright">
+        © 2024 Copyright Autoplanet. Todos los derechos reservados. <a href="#">Términos y Condiciones - Política de Protección de Datos Personales</a>
+     </div>
+      </div>
+    </footer>
+
+    <script src="./assets/Js/js.js"></script>
+  </body>
+</html>
