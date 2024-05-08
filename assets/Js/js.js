@@ -127,7 +127,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
   
-
+function redireccionar(url) {
+  // Redireccionar a otra página
+  window.location.href = url;
+}
 
 
 
