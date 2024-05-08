@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.mainMenu {
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    position: fixed;
+    display: flex;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+}
+
+.menuGeneral {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menuGeneral .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.listas ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.listas li {
+    display: none;
+    list-style: none;
+    padding: 10px;
+}
+
+.contenedor {
+    top:10%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}

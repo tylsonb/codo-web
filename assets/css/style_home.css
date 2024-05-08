@@ -377,7 +377,7 @@ p{
 
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
         
 .menu-list {
         display: none; 
@@ -393,7 +393,7 @@ p{
 
 
     .menu-list li {
-        padding: 1.5em 0; /* Espaciado interior */
+        padding: 1.5em 0; /* Espaciado interior
     }
 
     .menu_item{
@@ -408,7 +408,7 @@ p{
         content: '';
         display: block;
         margin: 0;
-        /* margin-top: 20px; */
+        /* margin-top: 20px;
         height: 4px;
         width: 18%;
         background: #18bde6;
@@ -416,16 +416,16 @@ p{
     }
 
     .menu-list.active {
-        display: none; /* Muestra el menú cuando está activo */
+        display: none; /* Muestra el menú cuando está activo 
     }
 
     .hamburguesa {
-        display: flex; /* Muestra el botón de hamburguesa en pantallas más pequeñas */
+        display: flex; /* Muestra el botón de hamburguesa en pantallas más pequeñas 
     }
     
-}
+} */
 
-@media (max-width: 970px) {
+/* @media (max-width: 970px) {
 
     .header {
         width: 90%;
@@ -456,7 +456,7 @@ p{
     .submenu {
         display: none;
         opacity: 1;
-        position: relative; /* Cambiado a relativo */
+        position: relative; /* Cambiado a relativo
         background-color: #fff;
         margin-top: 0;
         border-top: 3px solid #000;
@@ -467,13 +467,13 @@ p{
     }
 
     .submenu-lista {
-        display: none; /* Ocultamos la lista por defecto */
+        display: none; /* Ocultamos la lista por defecto
     }
 
     .submenu.show .submenu-lista {
-        display: block; /* Mostramos la lista cuando se hace clic en el elemento del menú */
+        display: block; /* Mostramos la lista cuando se hace clic en el elemento del menú 
     }
-}
+} */
 
 
 
