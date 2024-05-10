@@ -136,6 +136,10 @@ span {
     color: inherit;
     font-size: 14px;}
 
+span a{
+    text-decoration: none;
+        }
+
 .menu ul {
         display: flex;
         padding: 24px 10px 0px;
