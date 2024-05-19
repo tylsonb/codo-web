@@ -1,5 +1,5 @@
 .menu-flotante {
-    position: fixed;
+    position:fixed;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
@@ -53,4 +53,5 @@
 #opcion-whatsapp {
     background-color: #8de981;
 }
+
 

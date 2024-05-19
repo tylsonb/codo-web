@@ -138,7 +138,10 @@ span {
 
 span a{
     text-decoration: none;
+    color: inherit;
         }
+
+
 
 .menu ul {
         display: flex;
@@ -252,15 +255,16 @@ nav li {
 .contenido{
     text-align: center;
     margin: 60px 0;
+    padding: 30px;
 }
 
 .contenido h2 {
     color: #18bde6;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: inherit;
 }
 
@@ -277,16 +281,17 @@ p{
     color: #002239;
     text-align: center;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .contenido .main-content {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 40px;
     margin: 0 0 10px;
     color: #666;
-    line-height: 1.4;
+    line-height: 1.6;
     text-align: justify;
 }
 
@@ -322,13 +327,34 @@ p{
     transform: scale(.85);
 }
 
-.section-experiencia img {
-    margin-top: 70px;
-    margin-left: 150px;
-    margin-bottom: 70px;
-    border-radius: calc(0.25rem - -10px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.newexperiencia {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
 }
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    width: auto;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+
+ .newexperiencia img {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+
 
 .footer {
     color: #002239;
@@ -381,6 +407,8 @@ p{
 
 }
 
+/* @media queris */
+
 @media screen and (max-width: 768px) {
         
 .menu-list {
@@ -397,7 +425,7 @@ p{
 
 
     .menu-list li {
-        padding: 1.5em 0; /* Espaciado interior */
+        padding: 1.5em 0; 
     }
 
     .menu_item{
@@ -412,7 +440,6 @@ p{
         content: '';
         display: block;
         margin: 0;
-        /* margin-top: 20px; */
         height: 4px;
         width: 18%;
         background: #18bde6;
@@ -420,16 +447,16 @@ p{
     }
 
     .menu-list.active {
-        display: none; /* Muestra el menú cuando está activo */
+        display: none; 
     }
 
     .hamburguesa {
-        display: flex; /* Muestra el botón de hamburguesa en pantallas más pequeñas */
+        display: flex; 
     }
     
 }
 
-@media (max-width: 970px) {
+@media (max-width: 768px) {
 
     .header {
         width: 90%;
@@ -460,7 +487,7 @@ p{
     .submenu {
         display: none;
         opacity: 1;
-        position: relative; /* Cambiado a relativo */
+        position: relative; 
         background-color: #fff;
         margin-top: 0;
         border-top: 3px solid #000;
@@ -471,18 +498,123 @@ p{
     }
 
     .submenu-lista {
-        display: none; /* Ocultamos la lista por defecto */
+        display: none; 
     }
 
     .submenu.show .submenu-lista {
-        display: block; /* Mostramos la lista cuando se hace clic en el elemento del menú */
+        display: block; 
+    }
+}
+
+/* responsive carrusel */
+
+@media screen and (max-width: 768px) {
+    .fotorama__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* contenido resposive */
+
+@media (min-width: 768px) {
+    .contenido {
+      max-width: 800px; 
+      margin: 0 auto; 
+    }
+  }
+  
+  /* Estilos para dispositivos móviles y tablets */
+  @media (max-width: 767px) {
+    .contenido {
+      padding: 20px; 
+    }
+    
+    .contenido h2 {
+      font-size: 22px; 
+    }
+    
+    .subtitle {
+      font-size: 16px; 
+    }
+    
+    .main-content {
+      font-size: 14px; 
+    }
+  }
+
+/* marca responsive */
+
+/* Estilos para dispositivos móviles y tablets */
+@media screen and (max-width: 768px) {
+    .cotenedor-marcas {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 769px) {
+    .cotenedor-marcas {
+        padding: 0;
+    }
+
+    .card {
+        margin: 0 10px;
+    }
+}
+
+
+/* experiencia resposive */
+
+@media only screen and (max-width: 768px) {
+    .newexperiencia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Cambia la dirección a columna para apilar las imágenes */
+        
+    }
+
+    .img-container {
+        display: block; /* Cambia a bloque para que las imágenes se muestren una debajo de la otra */
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    }
+
+    .newexperiencia img {
+        margin-top: 0; /* Eliminar el margen superior */
+        margin-bottom: 0; /* Eliminar el margen inferior */
     }
 }
 
 
 
+/* foote resposive */
 
-
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+    .footer-direction, .footer-contact, .footer-rrss {
+      margin-top: 15px;  
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .footer-rrss {
+      padding-top: 0; 
+    }
+  }
+  
 
 
 

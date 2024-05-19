@@ -56,10 +56,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Mostrar la siguiente imagen automáticamente cada 5 segundos
-  setInterval(showNextImage, 10000);
+  /* setInterval(showNextImage, 10000); */
 });
 
 /* sub-menu responsive */
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var menuItems = document.querySelectorAll('.menu_item');
@@ -81,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
    
-
-
 document.querySelectorAll('.seleccionado_item').forEach(item => {
     item.addEventListener('click', function() {
         const submenu = this.parentElement.querySelector('.submenu');
@@ -97,7 +96,7 @@ document.querySelectorAll('.seleccionado_item').forEach(item => {
     });
 
     // Cerrar el submenú después de hacer clic en una opción
-    const submenuItems = item.parentElement.querySelector('.submenu-lista').querySelectorAll('li');
+    const submenuItems = item.parentElement.querySelector('.submenu-lista').querySelectorAll(' .submenu-lista li');
     submenuItems.forEach(submenuItem => {
         submenuItem.addEventListener('click', function() {
             const submenu = this.closest('.submenu');
