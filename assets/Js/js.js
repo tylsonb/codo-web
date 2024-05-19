@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var menuFlotante = document.querySelector(".menu-flotante");
 
   // Mostrar el menú flotante al cargar la página
-  menuFlotante.style.right = "0";
+  menuFlotante.setAttribute("style", "right: 0");
   menuFlotante.classList.add("visible");
 
   // Al pasar el mouse, mostrar los nombres de las opciones

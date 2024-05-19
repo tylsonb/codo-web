@@ -4,69 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuevo | Autoplanet</title>
-    <link rel="stylesheet" href="../assets/css/style_home.css" />
-    <link rel="stylesheet" href="../assets/css/contacto.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/nuevo.css" />
+    <link rel="stylesheet" href="../assets/css/contacto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <script src="../assets/Js/header-footer.js"></script>
-    <script src="../assets/Js/js.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      href="https://unpkg.com/flickity@2.3.0/dist/flickity.css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity-fullscreen@2.0.0/fullscreen.css"
+    />
+    <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fullscreen@2.0.0/fullscreen.js"></script>
+    <script src="../assets/Js/nuevo.js"></script>
+    <script src="../assets/Js/aos.js"></script>
+  </head>
+  <body>
     <script>
       AOS.init();
     </script>
-  </head>
-  <body>
-    <div id="encabezado-comun"></div>
-    <section class="carousel">
-      <h1 class="oculto-seo">Autoplanet</h1>
-      <div class="carousel-inner">
+    <!-- HEADER -->
+    <section id="navbar" class="top-nav">
+      <div class="logo">
+        <img src="../assets/img/logo-autoplanet.jpg" alt="logo-autoplanet">
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+          <ul class="menu">
+            <li><a href="../index.html">HOME</a></li>
+            
+           <ul class="desplegable"><a onclick="dropdown()" id="enlace" href="#">NUEVO &#9660</a>
+            <div id="myDropdown"  class="submenu">
+              <a href="#">DFSK</a>
+              <a href="#">GEELY</a>
+              <a href="#">SUBARU</a>             
+          </div>
+        </ul>
+            <ul class="desplegable"><a id="enlace" href="#">POST VENTA &#9660</a>
+            <div onclick="dropdown()" id="myDropdown"  class="submenu">
+              <a href="#">REPUESTOS</a>
+              <a href="#">DFSK AGENDAMIENTO</a>
+              <a href="#">SUBARU AGENDAMIENTO</a>
+              <a href="#">SISTEMAS DE PROTECCION</a>
+            </div>
+          </ul>
+            <li><a href="#">SUCURSALES</a></li>
+            <li><a href="../pages/contacto.html">CONTACTO</a></li>
+          </ul>
+        </section>
+          
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER -->
+
+    <!-- HERO SLIDER -->
+    <div
+      id="hero-slider"
+      class="main-carousel"
+      data-flickity='{ "cellAlign": "center", "draggable": true, "wrapAround": true, "autoPlay": true, "pauseAutoPlayOnHover": false, "fullscreen": true, "lazyLoad": 1, "cellSelector": ".carousel-cell"}'
+    >
+      <div class="static-banner static-banner1">
+        TU AUTO 0KM CADA VEZ MAS CERCA
+      </div>
+      <div class="carousel-cell">
+        <img data-flickity-lazyload="../assets/img/heroimg.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img data-flickity-lazyload="../assets/img/heroimg2.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img data-flickity-lazyload="../assets/img/heroimg3.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img data-flickity-lazyload="../assets/img/heroimg4.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img data-flickity-lazyload="../assets/img/heroimg5.jpg" alt="" />
+      </div>
+    </div>
+    <!-- HERO SLIDER -->
+
+    <main class="nuevo-main">
+      <div
+        class="animate__animated animate__fadeIn animate__delay-1s dfsk-logo"
+      >
         <img
-          src="../assets/img/1-ir-somos-abril.jpg"
-          class="fotorama__img active"
-          alt="foto otoño"
-        />
-        <img
-          src="../assets/img/2-ir-dfsk-suv-abril.jpg"
-          class="fotorama__img"
-          alt="foto dfsk"
-        />
-        <img
-          src="../assets/img/3-ir-dfsk-utilitarios-abril.jpg"
-          class="fotorama__img"
-          alt="foto utilitarios"
-        />
-        <img
-          src="../assets/img/4-geely-abril.jpg"
-          class="fotorama__img"
-          alt=""
-        />
-        <img
-          src="../assets/img/5-subaru-abril.jpg"
-          class="fotorama__img"
-          alt="foto subaru"
-        />
-        <img
-          src="../assets/img/6-repuestos-abril.jpg"
-          class="fotorama__img"
-          alt="foto repuestos"
+          src="../assets/img/marcas/dfsk_marca_completa.png"
+          class="custom-logo"
+          alt="Dfsk"
         />
       </div>
-      <div class="carousel-nav"></div>
-    </section>
-
-    <div>
-        <h1 class="montserrat-nuevo">DFSK</h1>
-    </div>
-
-    <footer>
-      <div id="pie-de-pagina-comun"></div>
-    </footer>
+      <section class="contenido-nuevo">
+        <div
+          class="dfsk-introduccion animate__animated animate__fadeIn animate__delay-1s"
+        >
+          DFSK disfruta de una fuerte influencia y atracción de marca en el
+          sector automotriz. La marca Dongfeng es la primera marca registrada de
+          renombre en la industria automotriz china, la cual además figura entre
+          las 500 más prestigiosas del mundo. <br /><br />
+          En el medio siglo transcurrido desde la fundación de DFSK, la empresa
+          ya ha construido: capacidad de gestión y operación, capacidad de
+          producción, y capacidad de marketing para convertirse en líder dentro
+          de la industria. Además, ha establecido un sistema de I+D complejo y
+          abierto, el cual cuenta con una sólida fuerza investigadora y una
+          fuerte capacidad de creación independiente, con bases de I+D
+          distribuidas en lugares como China, Suecia o Alemania entre otros, los
+          cuales investigan de forma conjunta y se dedican a la aplicación y
+          creación tecnológica para la industria automotriz. <br /><br />
+          A finales de 2014 DFSK lleva lanzados al mercado un total de más de 30
+          millones de vehículos, incluyendo: vehículos turismos (incluyendo todo
+          tipo de modelos como sedanes SUV , monovolúmenes y mini-coches),
+          vehículos comerciales (camiones y autobuses), los cuales abarcan
+          series completas de vehículos pesados, medios, ligeros, minis y
+          vehículos modificados para uso especial; series de vehículos tales
+          como vehículos todoterreno especiales de alta maniobrabilidad,
+          vehículos para desierto, camiones todoterreno con tracción integral y,
+          por último, todo tipo de vehículos de nuevas energías tales como
+          vehículos híbridos, vehículos eléctricos puros, vehículos a gas
+          natural, etc. <br /><br />Mirando hacia el futuro, DFSK seguirá siendo
+          fiel a su visión de un “Dongfeng perenne siempre en crecimiento, un
+          Dongfeng internacional de cara al mundo, y un Dongfeng que se
+          desarrolle de forma independiente y continua” y se esforzará por ser
+          más fuerte y mejor.
+        </div>
+        <div id="pie-de-pagina-comun"></div>
+      </section>
+    </main>
   </body>
 </html>
