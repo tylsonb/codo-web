@@ -6,6 +6,7 @@
     <title>Encabezado</title>
     <link rel="stylesheet" href="../assets/css/style_home.css">
     <link rel="stylesheet" href="../assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/css/styles_menu_flotante.css">
 </head>
 <body>
     <header class="header">
@@ -30,8 +31,8 @@
                 <div class="submenu">
                   <div class="submenu-lista">
                   <ul>
-                    <li class="sub_menu-item"><a href="#">DFSK</a></li>
-                    <li class="sub_menu-item"><a href="#">Geely</a></li>
+                    <li class="sub_menu-item"><a href="../pages/nuevo.html">DFSK</a></li>
+                    <li class="sub_menu-item"><a href="../pages/nuevo.html#geely">Geely</a></li>
                     <li class="sub_menu-item"><a href="#">Subaru</a></li>
                   </ul>
                 </div>
@@ -61,9 +62,36 @@
             </ul>
           </div>
         </nav>
-        
-        <script src="../assets/Js/header-footer.js"></script>
-      </header>
+
+        <!-- menu flotante -->
+      
+    <div id="menu-flotante" class="menu-flotante">
+      <div class="opcion" id="opcion-cotiza">
+          <i class="fa fa-car fa-fw"></i>
+          <span class="opcion-nombre">Cotiza</span>
+      </div>
+      <div class="opcion" id="opcion-repuesto">
+          <i class="fa fa-cog"></i>
+          <span class="opcion-nombre">
+            <a href="../pages/repuesto.html">Repuestos</a>
+          </span>
+      </div>
+      <div class="opcion" id="opcion-agendamiento">
+          <i class="fa fa-calendar"></i>
+          <span class="opcion-nombre">Agendamiento <a href="../pages/DFSK-Agendamiento.html">DKSF|</a> <a href="../pages/subaru-agendamientos.html">Subaru</a></span>
+      </div>
+      <div class="opcion" id="opcion-whatsapp" >
+          <i class="fa fa-whatsapp fa-fw"></i>
+          <span class="opcion-nombre">WhatsApp <a href="https://web.whatsapp.com/" target="_blank">| Contáctanos</a></span>
+          
+      </div>
+  </div>
     
+    <!-- fin de menu flotante -->
+        
+        
+      </header>
+      <script src="../assets/Js/js.js"></script>
+      <script src="../assets/Js/header-footer.js"></script>
 </body>
 </html>
