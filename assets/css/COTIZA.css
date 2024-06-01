@@ -1,0 +1,110 @@
+/* Estructura y Layout */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titulo {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.titulo h2 {
+  font-size: 2em;
+  color: #003366;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-sub {
+  flex: 1 1 300px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.card-sub:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h5 {
+  font-size: 1.25em;
+  color: #0073e6;
+}
+
+.card-body p {
+  color: #555;
+}
+
+.img-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img-card p {
+  font-size: 0.875em;
+  color: #adb5bd;
+  text-align: end;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.contenido {
+  text-align: center;
+  margin: 70px 0;
+}
+
+.contenido p {
+  color: #002339;
+  font-size: 1em;
+}
+
+.contenido a {
+  text-decoration: underline;
+  color: #15bae7;
+}
